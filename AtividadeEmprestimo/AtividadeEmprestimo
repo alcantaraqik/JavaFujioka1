@@ -1,0 +1,39 @@
+package Aula01;
+
+import java.util.Scanner;
+
+public class AtividadeEmprestimo {
+    public static void main(String[] args) {
+
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("Informe seu nome: ");
+        String nomeUsuario = leitor.nextLine();
+
+        Scanner leitor2 = new Scanner(System.in);
+        System.out.println("Informe sua idade: ");
+        int idade = leitor2.nextInt();
+
+        Scanner leitor3 = new Scanner(System.in);
+        System.out.println("Informe o valor que voce gostaria de receber: ");
+        int valorEmprestimo = leitor3.nextInt();
+
+        Scanner leitor4 = new Scanner(System.in);
+        System.out.println("Informe o percentual de juros: ");
+        int percentualJurosMes = leitor4.nextInt();
+
+        Scanner leitor5 = new Scanner(System.in);
+        System.out.println("Em quantos meses voce quer quitar o emprestimo? ");
+        int mesesParaPagar = leitor5.nextInt();
+
+        var valorFinal = 0;
+        if (idade >18 && idade < 23);
+            valorFinal = (valorEmprestimo / mesesParaPagar)  * percentualJurosMes;
+
+        System.out.println(valorFinal);
+
+
+
+
+
+    }
+}
